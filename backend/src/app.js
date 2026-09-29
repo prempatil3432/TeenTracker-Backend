@@ -19,22 +19,21 @@ const insightRoutes = require('./routes/insightRoutes');
 const app = express();
 
 // Security Middlewares
-app.use(helmet());
 app.use(
-  cors({
-    origin: (origin, callback) => {
-      // Allow localhost and specified clientUrl
-      if (!origin || origin.startsWith('http://localhost') || origin === config.clientUrl) {
-        callback(null, true);
-      } else {
-        callback(null, true); // Permissive in dev, can restrict in strict prod
-      }
-    },
-    credentials: true,
-    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-    allowedHeaders: ['Content-Type', 'Authorization'],
+  helmet({
+    crossOriginResourcePolicy: { policy: 'cross-origin' },
   })
 );
+
+// CORS Configuration - Allow all domains
+app.use(
+  cors({
+    origin: '*',
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With', 'Accept'],
+  })
+);
+app.options('*', cors());
 
 // Body Parsing & Request Limits
 app.use(express.json({ limit: '1mb' }));
