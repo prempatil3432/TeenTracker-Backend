@@ -15,6 +15,9 @@
 
 This repository contains the standalone **Frontend client** built with React, Vite, and TypeScript.
 
+- 🌐 **Deployed Backend API:** `https://teentracker-backend-qi30.onrender.com/api`
+- 🩺 **Backend Health Endpoint:** `https://teentracker-backend-qi30.onrender.com/api/health`
+
 ---
 
 ## 🌟 Key Features
@@ -79,9 +82,9 @@ This repository contains the standalone **Frontend client** built with React, Vi
    ```
 
 3. Set up environment variables:
-   Create a `.env` file in the root directory:
+   Create a `.env` file in the root directory (defaults to live Render backend if omitted):
    ```env
-   VITE_API_URL=http://localhost:5000/api
+   VITE_API_URL=https://teentracker-backend-qi30.onrender.com/api
    ```
 
 4. Start the development server:
