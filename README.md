@@ -3,9 +3,11 @@
 > **TRACK → UNDERSTAND → ANALYZE → IMPROVE → SAVE**  
 > A production-grade, full-stack financial management web application specifically architected for teenagers to master their pocket money, track expenses, visualize spending patterns, set category budgets, and build lifelong saving habits.
 
+[![Live App](https://img.shields.io/badge/Vercel-Frontend%20Live-brightgreen?logo=vercel)](https://teen-tracker-frontend-alpha.vercel.app/)
 [![Live Backend](https://img.shields.io/badge/Render-Backend%20Live-brightgreen?logo=render)](https://teentracker-backend-qi30.onrender.com/api/health)
 [![API Base](https://img.shields.io/badge/API-teentracker--backend--qi30.onrender.com-blue)](https://teentracker-backend-qi30.onrender.com/api)
 
+- 🚀 **Live Production Web App (Frontend):** [https://teen-tracker-frontend-alpha.vercel.app/](https://teen-tracker-frontend-alpha.vercel.app/)
 - 🌐 **Live Deployed Backend API:** `https://teentracker-backend-qi30.onrender.com/api`
 - 🩺 **Health Check Endpoint:** `https://teentracker-backend-qi30.onrender.com/api/health`
 
@@ -479,6 +481,7 @@ Result: **TypeScript compiles with 0 errors and generates optimized production b
 4. Start command: `npm run start`
 
 ### Deploy Frontend (e.g. Vercel, Netlify, Cloudflare Pages):
+- 🟢 **Live Production Deployment:** `https://teen-tracker-frontend-alpha.vercel.app/`
 1. Set the root directory to `teen-expense-tracker/frontend` (or repo root for frontend repository).
 2. Configure environment variable: `VITE_API_URL=https://teentracker-backend-qi30.onrender.com/api`
 3. Build command: `npm run build`

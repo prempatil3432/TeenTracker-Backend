@@ -1,6 +1,7 @@
 # TEENSPEND — Frontend 🚀
 > Modern, Responsive React + TypeScript Money Management & Expense Tracker for Teenagers
 
+[![Live App](https://img.shields.io/badge/Vercel-Live%20Demo-brightgreen?logo=vercel)](https://teen-tracker-frontend-alpha.vercel.app/)
 [![React](https://img.shields.io/badge/React-18.x-61dafb?logo=react)](https://react.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178c6?logo=typescript)](https://www.typescriptlang.org/)
 [![Vite](https://img.shields.io/badge/Vite-6.x-646cff?logo=vite)](https://vitejs.dev/)
@@ -15,6 +16,7 @@
 
 This repository contains the standalone **Frontend client** built with React, Vite, and TypeScript.
 
+- 🚀 **Live Production Web App:** [https://teen-tracker-frontend-alpha.vercel.app/](https://teen-tracker-frontend-alpha.vercel.app/)
 - 🌐 **Deployed Backend API:** `https://teentracker-backend-qi30.onrender.com/api`
 - 🩺 **Backend Health Endpoint:** `https://teentracker-backend-qi30.onrender.com/api/health`
 
